@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Elegan</title>
+    <style>
+        /* Reset & Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4ece2; /* Cream lembut */
+            color: #5e4638; /* Cokelat gelap */
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #8b6a4f; /* Cokelat medium */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #7590e0; /* Cokelat terang */
+        }
+
+        /* Section */
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            scroll-snap-align: start;
+        }
+
+        section:nth-child(even) {
+            background-color: #5d83f5; /* Cokelat muda */
+            color: #fff;
+        }
+
+        .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #8b6a4f;
+        }
+
+        .content p, .content ul {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #5e4638; /* Aksen */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8b6a4f;
+            color: #fff;
+        }
+
+        /* Gambar */
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        /* Scroll Snapping */
+        html {
+            scroll-snap-type: y mandatory;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            .content h2 {
+                font-size: 2rem;
+            }
+
+            .content p, .content ul {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portofolio Saya</h1>
+        <nav>
+            <a href="#biodata">Biodata</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#pekerjaan">Pekerjaan</a>
+            <a href="#organisasi">Organisasi</a>
+            <a href="#sertifikasi">Sertifikasi</a>
+            <a href="#karya">Karya</a>
+        </nav>
+    </header>
+
+    <section id="biodata">
+        <div class="content">
+            <h2>Biodata</h2>
+            <p>Nama: Stevy Desprita Olivia</p>
+            <p>Tempat Tanggal Lahir: Muara Bulian</p>
+            <p>Tanggal Lahir: 12 Desember 2003</p>
+            <p>Alamat: Perumahan Bisma Hill </p>
+            <p>Email: stevystevy45@gmail.com</p>
+            <p>Telepon: 082281554953</p>
+            <img src="stevy.jpg" alt="Foto Terbaik">
+        </div>
+    </section>
+
+    <section id="pendidikan">
+        <div class="content">
+            <h2>Riwayat Pendidikan</h2>
+            <ul>
+                <li>2016 - SDN 49/1 Bungku</li>
+                <li>2019 - SMPN 25 Batanghari</li>
+                <li>2022 - SMAN 6 Batanghari</li>
+                <li>2026 - Universitas Nurdin Hamzah</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="organisasi">
+        <div class="content">
+            <h2>Riwayat Organisasi</h2>
+            <ul>
+                <li>2017 - Bedahara di OSIS</li>
+                <li>2018 - Anggota di Pramuka</li>
+                <li>2024 - Bendahara di KSR PMI UNIT UNH</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="sertifikasi">
+        <div class="content">
+            <h2>Sertifikasi / Workshop</h2>
+            <ul>
+                <li>2023 -  Sertifikasi AKARSI (Ajang Kreatifitas Remaja Berprestasi) </li>
+                <li>2024 - Piagam Penghargaan sebagai Tim Assesment </li>
+            </ul>
+        </div>
+    </section>
+
+  
